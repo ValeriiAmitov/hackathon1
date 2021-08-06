@@ -61,6 +61,7 @@
       top: -100px;
       left: -100px;
     }
+
     .hpic {
       font-family:'Courier New', Courier, monospace;
       size:200px;
@@ -137,8 +138,8 @@
       font-weight: 200;
     }
 
-    .card-body {
-        color:rgba(161, 160, 238, 0.863);
-      font-weight: 200;
-      text-align: center;
+   .card-body {
+    color:rgba(161, 160, 238, 0.863);
+    font-weight: 200;
+    text-align: center;
     }
