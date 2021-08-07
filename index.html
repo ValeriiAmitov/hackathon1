@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
@@ -17,31 +18,50 @@
           <input class="button_ok" type="button" id="submit" value="start preparing">
         </form>
       </div>
-      
-      <table>
-        <tr>
-            <div class="card" style="width: 18rem;">
-                <iframe width="300" height="200"src="https://www.youtube.com/embed/EpmzPtvv8Rg?controls=0"></iframe>
-                <div class="card-body">
-                  <h5 class="card-title">How to make a cappuccino</h5>
-                  <p class="card-text">easy to make, easy to drink.</p>
-                  <a href="#" class="btn btn-primary">add to cart</a>
-                </div>
-              </div>
-              
-          <th class="icon"><i class="bi bi-linkedin"></i></th>
-          <th class="icon"><i class="far fa-check-circle"></i></th>
-        </tr>
 
-        <tr>
-          <td class="header_table">About cooffee</td>
-          <td class="header_table">Drink it all</td>
-        </tr>
-            
-          <tr>
-            <td class="discription">Keep calm and breath</td>
-            <td class="discription">Just imagine</td>
-          </tr>
-      </table>
+        <div class="container1">
+            <div class="vid">
+              <iframe width="300" height="200"src="https://www.youtube.com/embed/EpmzPtvv8Rg?controls=0"></iframe>
+              <p>How to make a cappuccino</p>
+              <p>Easy to make, easy to drink.</p>
+              </div>
+              <div class="vid">
+                <iframe width="300" height="200"src="https://www.youtube.com/embed/tORaKKkuC_g?controls=0"></iframe>
+                <p>How to make a espresso</p>
+                <p>strong choice</p>
+              </div>
+              <div class="vid">
+              <iframe width="300" height="200"src="https://www.youtube.com/embed/o86p0cKwjUw?controls=0"></iframe>
+              <p>How to make Latte Art</p>
+              </div>
+        </div>
+
+        <div class="container2">
+          <div class="box">
+            <h2 class="name">Cappuccino</h2>
+            <a href="#" class="buy">Buy me now!</a>
+            <div class="circle"></div>
+            <img src="images/capucc.png" class="product" width="200px" height="270px">
+        </div>
+        <div class="box">
+          <h2 class="name">Latte Macchiato</h2>
+          <a href="#" class="buy">Buy me now!</a>
+          <div class="circle"></div>
+          <img src="images/latte.png" class="product" width="300px" height="300px">
+      </div>
+      <div class="box">
+        <h2 class="name">Espresso</h2>
+        <a href="#" class="buy">Buy me now!</a>
+        <div class="circle"></div>
+        <img src="images/presso.png" class="product" width="280px" height="280px">
+    </div>
+<script src="vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".box"), {
+    max: 25,
+    speed: 600
+});
+</script>
+
     </body>
 </html>

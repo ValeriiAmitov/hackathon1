@@ -3,13 +3,156 @@
     padding: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: cornsilk;
+  }
+.container2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  transform-style: preserve-3d;
+}
+
+.container2 .box {
+  position:relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.container2 .box::before {
+  content: 'VALERII';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #ffc1a4;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container2 .box::after {
+  content: 'COFFEE';
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #ffc1a4;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container2 .box:hover:before, 
+.container2 .box:hover:after {
+  opacity: 0.04;
+}
+
+.container2 .box .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container2 .box:hover .name {
+  top: 40px;
+  opacity: 1;
+}
+
+.container2 .box .buy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: rgb(49, 7, 53);
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container2 .box:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.container2 .box .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background:#fff;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-50%,-50%,50px);
+}
+
+.container2 .box .product {
+position: absolute;
+top: 50%;
+left: 50%;
+max-width: 300px;
+transition: 0.5s;
+z-index:11;
+transition: 0.5s;
+transform-style: preserve-3d;
+transform: translate3d(-50%,-50%,50px) rotate(-15deg);
+}
+
+.container2 .box:hover .product {
+  transform: translate3d(-50%,-50%,100px) rotate(-15deg);
+}
+
+.container2 .box:nth-child(1) .circle,
+.container2 .box:nth-child(1) .buy {
+  background: #ffc1a4;
+}
+
+.container2 .box:nth-child(2) .circle,
+.container2 .box:nth-child(2) .buy {
+  background: #9ceedc;
+}
+
+.container2 .box:nth-child(3) .circle,
+.container2 .box:nth-child(3) .buy {
+  background: #686bf5;
+}
+
   .header {
-    height: 9vh;
-    background-color:currentColor;
+    background-color: lightblue;
     background-size: cover;
-    background-position: center;
-    padding: 2% 0;
+    background-position: bottom;
+    padding: 0;
   }
   
   .mix {
@@ -89,7 +232,7 @@
       border-radius: 6px;
       line-height: 1.4;
       font-size: 1rem;
-      color: rgb(0, 0, 2);
+      color: rgb(6, 6, 10);
       background-color: rgba(172, 223, 223, 0.671);
     }
   
@@ -110,15 +253,25 @@
       background-color: #91e9bd;
       color:#411703;
     }
-    table {
+    .container1 {
+      display:flex;
+      margin:auto;
+	    flex-wrap: wrap;
+	    justify-content:space-evenly;
+      
+    }
+
+    .container1 {
       background-image: url(https://cdn.pixabay.com/photo/2016/04/12/11/19/coffee-1324126_1280.jpg);
       background-size: cover;
       background-position: center;
       margin: 0 auto;
-      padding: 2% 0;
+      padding: 7% 2;
       text-align: center;
       line-height: 1.1;
+      color: rgb(243, 227, 208);
     }
+
     .header_table{
       width: 4%;
       font-weight: bolder;
@@ -138,8 +291,3 @@
       font-weight: 200;
     }
 
-   .card-body {
-    color:rgba(161, 160, 238, 0.863);
-    font-weight: 200;
-    text-align: center;
-    }
