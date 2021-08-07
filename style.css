@@ -1,15 +1,23 @@
-*{
+html {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    -webkit-font-smoothing: antialiased;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: cornsilk;
-  }
+}
+body {
+  background-color: #323131;
+  color: white;
+  max-width: 540px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 36px;
+  max-height: 100vh;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
 .container2 {
   position: relative;
   display: flex;
@@ -17,7 +25,7 @@
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1280px;
   transform-style: preserve-3d;
 }
 
@@ -148,73 +156,26 @@ transform: translate3d(-50%,-50%,50px) rotate(-15deg);
   background: #686bf5;
 }
 
-  .header {
-    background-color: lightblue;
-    background-size: cover;
-    background-position: bottom;
-    padding: 0;
-  }
-  
-  .mix {
-    cursor: pointer;
-    float: right;
-    margin-top: 2vh;
-    margin-right: 4vw;
-    padding: 9px 18px;
-    border: 0;
-    text-align: center;
-    border-radius: 6px;
-    line-height: 1.5;
-    background-color:#eeff03;
-    color:rgb(61, 37, 6);
-    font-size: 1rem;
-    font-weight: bolder;
-    }
-  
-    .signin_button:hover {
-      cursor: pointer;
-      background-color: #26d2e9c2;
-      color:rgb(2, 1, 0);
-    }
-    #start{
-      float: left;
-      margin-top: 2vh;
-      margin-left: 2vw;
-      padding: 10px 20px;
-      text-align: center;
-      line-height: 1.5;
-      border-radius: 5px;
-      background-color: #eeff03;
-      color:rgba(4, 7, 5, 0.9);
-      font-size: 1rem;
-      font-weight: bolder;
-    }
-    .backpicture {
-      background-image: url(https://cdn.pixabay.com/photo/2017/03/10/14/05/background-2132913_1280.jpg);
-      background-position: center;
-      position: relative;
-      display: inline-block;
-      background-size: cover;
-      overflow: hidden;
-      height: 60vh;
-      width: 100%;
-    }
-    .img {
-      position: absolute;
-      top: -100px;
-      left: -100px;
-    }
-
-    .hpic {
-      font-family:'Courier New', Courier, monospace;
-      size:200px;
-      position:absolute;
-      margin:1ch;
-      top: 30%;
-      left: 0;
-      right:0;
-      text-align: center; 
-      color:#eeff03;
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.signin_button:hover {
+  cursor: pointer;
+  background-color: #26d2e9c2;
+  color:rgb(2, 1, 0);
+}
+.hpic {
+  font-family:'Courier New', Courier, monospace;
+  size:200px;
+  position:absolute;
+  margin:0;
+  top: 10%;
+  left: 0;
+  right:0;
+  text-align: center; 
+  color:#eeff03;
       
     }
     .form{
@@ -226,26 +187,16 @@ transform: translate3d(-50%,-50%,50px) rotate(-15deg);
       text-align: center;
       top: 80%;
     }
-    .button_nm {
-      padding: 10px 50px;
-      border: 2px solid rgb(1, 26, 2);
-      border-radius: 6px;
-      line-height: 1.4;
-      font-size: 1rem;
-      color: rgb(6, 6, 10);
-      background-color: rgba(172, 223, 223, 0.671);
-    }
-  
-    .button_ok {
+    .button {
       cursor: pointer;
-      padding: 9px 18px;
+      padding: 10px 20px;
       border: 0;
       border-radius: 5px;
       line-height: 1.5;
       font-weight: bolder;
       font-size: 1rem;
       color: #eeff03;
-      background-color: rgba(179, 201, 178, 0.6);
+      background-color: rgba(94, 7, 207, 0.6);
     }
   
     .button_ok:hover {
@@ -261,33 +212,12 @@ transform: translate3d(-50%,-50%,50px) rotate(-15deg);
       
     }
 
-    .container1 {
-      background-image: url(https://cdn.pixabay.com/photo/2016/04/12/11/19/coffee-1324126_1280.jpg);
-      background-size: cover;
-      background-position: center;
-      margin: 0 auto;
-      padding: 7% 2;
-      text-align: center;
-      line-height: 1.1;
-      color: rgb(243, 227, 208);
-    }
-
-    .header_table{
-      width: 4%;
-      font-weight: bolder;
-      font-size: 1.5em;
-      color:#d37c53;
-    }
-    th, td {
-      padding: 10px;
-      height: 2%;
-    }
-    .icon {
-      font-size:4em;
-      color:#0992d1;
-    }
-    .discription {
-      color:rgba(161, 160, 238, 0.863);
-      font-weight: 200;
-    }
-
+  .container1 {
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding: 3% 2;
+    text-align: center;
+    line-height: 1.8;
+    color: rgb(243, 227, 208);
+  }

@@ -9,59 +9,64 @@
   </head>
     <body>
       <div class="header">
-        <span id="start">Welcome to the coffee box</span>
-        <input class="mix" type="button" id="submit" value="Mix it"> 
-      <div class="backpicture">
-        <h1 class="hpic">Start your day with cup of...</h1>
-        <form action="" class="form">
-          <input class="button_nm" type="text" id="coffeeChoice" name="coffeeChoice" placeholder="cup of...">
-          <input class="button_ok" type="button" id="submit" value="start preparing">
-        </form>
+        <p class="logo">Hey, human, let me choose your drink today...</p>
+        <div class="button">What will I drink today?</div>
+      </div>
+    
+      <img class="image" src="https://cdn.pixabay.com/photo/2017/02/26/00/03/cranium-2099120_1280.png" width="250px" height="250px">
+    
+      <div class="advice">
+        <span>Take a break from coding and</span>
+        <span class="phrase">do something else.</span>
+        <img class="cursor" src="https://code.s3.yandex.net/web-code/cursor.gif">
       </div>
 
         <div class="container1">
             <div class="vid">
-              <iframe width="300" height="200"src="https://www.youtube.com/embed/EpmzPtvv8Rg?controls=0"></iframe>
-              <p>How to make a cappuccino</p>
-              <p>Easy to make, easy to drink.</p>
+                <iframe width="300" height="200"src="https://www.youtube.com/embed/EpmzPtvv8Rg?controls=0"></iframe>
+                <p>HOW TO MAKE A CAPPUCCINO</p>
+                <p>Easy to make, easy to drink.</p>
+              </div>
+              <div class="vid">
+                <iframe width="300" height="200"src="https://www.youtube.com/embed/o86p0cKwjUw?controls=0"></iframe>
+                <p>HOW TO MAKE LATTE ART</p>
+                <p>Your daily choice</p>
               </div>
               <div class="vid">
                 <iframe width="300" height="200"src="https://www.youtube.com/embed/tORaKKkuC_g?controls=0"></iframe>
-                <p>How to make a espresso</p>
-                <p>strong choice</p>
+                <p>HOW TO MAKE ESPRESSO</p>
+                <p>Strong choice</p>
               </div>
-              <div class="vid">
-              <iframe width="300" height="200"src="https://www.youtube.com/embed/o86p0cKwjUw?controls=0"></iframe>
-              <p>How to make Latte Art</p>
               </div>
-        </div>
 
         <div class="container2">
           <div class="box">
             <h2 class="name">Cappuccino</h2>
-            <a href="#" class="buy">Buy me now!</a>
+            <a href="#" class="buy">This one!</a>
             <div class="circle"></div>
             <img src="images/capucc.png" class="product" width="200px" height="270px">
         </div>
         <div class="box">
           <h2 class="name">Latte Macchiato</h2>
-          <a href="#" class="buy">Buy me now!</a>
+          <a href="#" class="buy">This one!</a>
           <div class="circle"></div>
           <img src="images/latte.png" class="product" width="300px" height="300px">
       </div>
       <div class="box">
         <h2 class="name">Espresso</h2>
-        <a href="#" class="buy">Buy me now!</a>
+        <a href="#" class="buy">This one!</a>
         <div class="circle"></div>
         <img src="images/presso.png" class="product" width="280px" height="280px">
-    </div>
-<script src="vanilla-tilt.min.js"></script>
-<script>
-  VanillaTilt.init(document.querySelectorAll(".box"), {
-    max: 25,
-    speed: 600
-});
-</script>
-
-    </body>
+      </div>
+    <p class="footer">© 2021 Valerii Amitov by Developers Institute</p>
+    <script src="script.js"></script>
+    <script src="vanilla-tilt.min.js"></script>
+    <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".box"), {
+      max: 25,
+      speed: 600
+      });
+    </script>
+  </body>
 </html>
