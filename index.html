@@ -5,63 +5,69 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
-    <title>Coffeethon</title>
+    <title>3D Coffee</title>
   </head>
+
     <body>
+<!-- Main button to select advice -->
       <div class="header">
-        <p class="logo">Hey, human, let me choose your drink today...</p>
-        <div class="button">What will I drink today?</div>
+        <div class="button">Click me to advice!</div>
       </div>
     
-      <img class="image" src="https://cdn.pixabay.com/photo/2017/02/26/00/03/cranium-2099120_1280.png" width="250px" height="250px">
-    
+      <img class="image">
       <div class="advice">
         <span>Take a break from coding and</span>
-        <span class="phrase">do something else.</span>
+        <span class="phrase">make a coffee you want</span>
         <img class="cursor" src="https://code.s3.yandex.net/web-code/cursor.gif">
       </div>
-
-        <div class="container1">
-            <div class="vid">
+<hr>
+<!--You Tube video content-->
+        <section class="container1">
+            <div class="vid1">
                 <iframe width="300" height="200"src="https://www.youtube.com/embed/EpmzPtvv8Rg?controls=0"></iframe>
                 <p>HOW TO MAKE A CAPPUCCINO</p>
                 <p>Easy to make, easy to drink.</p>
-              </div>
-              <div class="vid">
+            </div>
+              <div class="vid2">
                 <iframe width="300" height="200"src="https://www.youtube.com/embed/o86p0cKwjUw?controls=0"></iframe>
                 <p>HOW TO MAKE LATTE ART</p>
                 <p>Your daily choice</p>
               </div>
-              <div class="vid">
+              <div class="vid3">
                 <iframe width="300" height="200"src="https://www.youtube.com/embed/tORaKKkuC_g?controls=0"></iframe>
                 <p>HOW TO MAKE ESPRESSO</p>
                 <p>Strong choice</p>
-              </div>
-              </div>
+            </div>
+          </section>
+<hr>
 
-        <div class="container2">
-          <div class="box">
-            <h2 class="name">Cappuccino</h2>
-            <a href="#" class="buy">This one!</a>
-            <div class="circle"></div>
-            <img src="images/capucc.png" class="product" width="200px" height="270px">
+<!--3D cups of coffee-->
+      <div class="container2">
+        <div class="box">
+          <h2 class="name">Cappuccino</h2>
+          <a href="#" class="buy">3$</a>
+          <div class="circle"></div>
+          <img src="images/capucc.png" class="product" width="170px" height="200px">
         </div>
         <div class="box">
           <h2 class="name">Latte Macchiato</h2>
-          <a href="#" class="buy">This one!</a>
+          <a href="#" class="buy">4$</a>
           <div class="circle"></div>
-          <img src="images/latte.png" class="product" width="300px" height="300px">
+          <img src="images/latte.png" class="product" width="230px" height="270px">
+        </div>
+        <div class="box">
+          <h2 class="name">Espresso</h2>
+          <a href="#" class="buy">2$</a>
+          <div class="circle"></div>
+          <img src="images/presso.png" class="product" width="280px" height="280px">
       </div>
-      <div class="box">
-        <h2 class="name">Espresso</h2>
-        <a href="#" class="buy">This one!</a>
-        <div class="circle"></div>
-        <img src="images/presso.png" class="product" width="280px" height="280px">
-      </div>
+
     <p class="footer">© 2021 Valerii Amitov by Developers Institute</p>
+
     <script src="script.js"></script>
+    <!--I'm using this script for animation-->
     <script src="vanilla-tilt.min.js"></script>
-    <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
+    <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script> 
     <script>
       VanillaTilt.init(document.querySelectorAll(".box"), {
       max: 25,
