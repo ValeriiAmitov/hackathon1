@@ -1,7 +1,7 @@
 let phrases = [
     { text: "take this cappuccino and go to the cinema", image: "https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg" }, 
     { text: "drink this Latte Machiatto, write the story about yourself", image: "https://cdn.pixabay.com/photo/2021/11/10/18/00/map-6784496_1280.jpg" }, 
-    { text: "shot this espresso. Don't worry about anything, just sit back, relax and enjoy your flight", image: "https://cdn.pixabay.com/photo/2015/07/11/23/02/plane-841441_1280.jpg" }, 
+    { text: "shot this espresso. Don't worry about anything, just sit back, relax and enjoy your flight", image: "https://cdn.pixabay.com/photo/2017/05/12/13/17/night-flight-2307018_1280.jpg" }, 
   ];
   
   function getRandomElement(arr) {
